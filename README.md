@@ -31,3 +31,4 @@ The product card responds to clicks, double-clicks, mouseover and mouseout. A cl
 ### Major Assignment 3
 
 The API provides signup, login, a list of users, and lookup by ID. Signup checks the email format, prevents duplicate email addresses, and requires a password with at least eight characters, one uppercase letter, one lowercase letter, one digit, and one special character. User responses do not include passwords.
+# -assignments-backend
