@@ -1,9 +1,3 @@
-/*
-  Major Assignment 1 - RailConnect Live Ops Dashboard
-  Dataset: Train 12951 - Mumbai Rajdhani Express
-*/
-
-// sample booking records
 const bookings = [
   {
     pnr: 8214501234,

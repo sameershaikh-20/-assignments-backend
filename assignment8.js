@@ -1,9 +1,3 @@
-/*
-  Assignment 8
-  College Grading System
-*/
-
-// function to calculate grade based on student score
 function getGrade(score) {
   if (score >= 90) {
     return "A";
@@ -18,7 +12,6 @@ function getGrade(score) {
   }
 }
 
-// sample testing
 console.log("Score 95: Grade " + getGrade(95));
 console.log("Score 85: Grade " + getGrade(85));
 console.log("Score 72: Grade " + getGrade(72));

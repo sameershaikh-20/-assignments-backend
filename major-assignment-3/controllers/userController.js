@@ -1,16 +1,9 @@
-/*
-  Controller: userController.js
-  Handles Get All Users and Get User By ID
-*/
-
 const userModel = require("../models/userModel");
 
-// Get all users
 const getAllUsers = (req, res) => {
   try {
     const users = userModel.findAll();
 
-    // Remove passwords before returning
     const safeUsers = users.map((user) => ({
       id: user.id,
       name: user.name,
@@ -32,7 +25,6 @@ const getAllUsers = (req, res) => {
   }
 };
 
-// Get user by ID
 const getUserById = (req, res) => {
   try {
     const { id } = req.params;

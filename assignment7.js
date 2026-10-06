@@ -1,18 +1,10 @@
-/*
-  Assignment 7
-  Print Day using Switch and Date Function
-*/
-
-// function to print day of the week
 function printDayOfWeek() {
-  // get current date
+
   let today = new Date();
 
-  // get day number (0 is Sunday, 1 is Monday, ..., 6 is Saturday)
   let dayIndex = today.getDay();
   let dayName = "";
 
-  // switch case to find day name
   switch (dayIndex) {
     case 0:
       dayName = "Sunday";
@@ -42,5 +34,4 @@ function printDayOfWeek() {
   console.log("Today is: " + dayName);
 }
 
-// sample testing
 printDayOfWeek();

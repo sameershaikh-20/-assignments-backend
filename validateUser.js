@@ -1,10 +1,5 @@
-/*
-  Assignment 9 - Custom Validation Module (validateUser.js)
-  Validates incoming user object
-*/
-
 function validateUser(user) {
-  // check if user object is provided
+
   if (!user || typeof user !== "object") {
     return {
       isValid: false,
@@ -12,7 +7,6 @@ function validateUser(user) {
     };
   }
 
-  // 1. name must be string
   if (typeof user.name !== "string" || user.name.trim() === "") {
     return {
       isValid: false,
@@ -20,7 +14,6 @@ function validateUser(user) {
     };
   }
 
-  // 2. age must be number > 18
   if (typeof user.age !== "number" || user.age <= 18) {
     return {
       isValid: false,
@@ -28,7 +21,6 @@ function validateUser(user) {
     };
   }
 
-  // 3. email must include "@"
   if (typeof user.email !== "string" || !user.email.includes("@")) {
     return {
       isValid: false,
@@ -36,7 +28,6 @@ function validateUser(user) {
     };
   }
 
-  // if all checks pass
   return {
     isValid: true,
     message: "User validation successful"
